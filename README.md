@@ -32,6 +32,15 @@ You'll take advantage of the flexible rendering capabilities of Next.js by using
 - Postgres
 - TypeScript
 
+## Prerequisites
+
+To successfully finish this guide, you'll need:
+
+- Node.js
+- A PostgreSQL Database (set up a free PostgreSQL database on Heroku)
+- A GitHub Account (to create an OAuth app)
+- A Vercel Account (to deploy the app)
+
 ## 💁‍♀️ How to use
 
 - [Provision a Postgres container on Railway](https://dev.new)
