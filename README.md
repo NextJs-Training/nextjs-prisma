@@ -54,12 +54,16 @@ To successfully finish this guide, you'll need:
   ```bash
   npm install
   ```
+  or
+  ```bash
+  yarn
+  ```
 - Whenever you make changes to your database that are reflected in the Prisma schema, you need to manually re-generate Prisma Client to update the generated code in the node_modules/.prisma/client directory: `npm run generate`
 - [Install Prisma](/install-prisma)
 - [Provision a Postgres container on Railway](https://dev.new)
-- Run the NextJS app `npm run dev` Runs the app in the development mode.
+- Run the NextJS app `npm run dev` or `yarn dev` Runs the app in the development mode.
 - Open http://localhost:3000 to view it in your browser.
-- Migrate the database `npm run migrate:dev`
+- Migrate the database `yarn migrate:dev` or `npm run migrate:dev`
 
 ## 📝 Notes
 
