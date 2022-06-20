@@ -1,14 +1,38 @@
 version: '3.8'
 services:
-  postgres:
-    image: postgres:10.3
+  db:
+    image: postgres:latest
     restart: always
     environment:
-      - POSTGRES_USER=sammy
-      - POSTGRES_PASSWORD=your_password
-    volumes:
-      - postgres:/var/lib/postgresql/data
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=prisma # The PostgreSQL default database (automatically created at first launch)
     ports:
       - '5432:5432'
+    volumes: 
+      - db:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/create_tables.sql
+  api:
+    container_name: quotes-api
+    build:
+      context: ./
+      target: production
+    image: quotes-api
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+    environment:
+      NODE_ENV: production
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: postgres
+    links:
+      - db
+    volumes:
+      - './:/src'
 volumes:
-  postgres:
+  db:
+    driver: local
