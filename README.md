@@ -52,13 +52,13 @@ To successfully finish this guide, you'll need:
 - Run the NextJS app `npm run dev` Runs the app in the development mode.
 - Open http://localhost:3000 to view it in your browser.
 - Connect to your Railway project with `railway link`
-- Migrate the database `railway run yarn migrate:dev`
+- Migrate the database `npm run migrate:dev`
 
 ## 📝 Notes
 
 This app is a simple todo list where the data is persisted to Postgres. [Prisma
 migrations](https://www.prisma.io/docs/concepts/components/prisma-migrate#prisma-migrate)
-can be created with `railway run yarn migrate:dev` and deployed with `railway run yarn migrate:deploy`. The Prisma client can be regenerated with
+can be created with `npm run migrate:dev` and deployed with `railway run yarn migrate:deploy`. The Prisma client can be regenerated with
 `yarn generate`.
 
 [swr](https://swr.vercel.app/) is used to fetch data on the client and perform optimistic updates.
