@@ -51,7 +51,6 @@ To successfully finish this guide, you'll need:
 - [Provision a Postgres container on Railway](https://dev.new)
 - Run the NextJS app `npm run dev` Runs the app in the development mode.
 - Open http://localhost:3000 to view it in your browser.
-- Connect to your Railway project with `railway link`
 - Migrate the database `npm run migrate:dev`
 
 ## 📝 Notes
