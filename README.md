@@ -54,6 +54,7 @@ To successfully finish this guide, you'll need:
   ```bash
   npm install
   ```
+- Whenever you make changes to your database that are reflected in the Prisma schema, you need to manually re-generate Prisma Client to update the generated code in the node_modules/.prisma/client directory: `prisma generate`
 - [Install Prisma](/install-prisma)
 - [Provision a Postgres container on Railway](https://dev.new)
 - Run the NextJS app `npm run dev` Runs the app in the development mode.
