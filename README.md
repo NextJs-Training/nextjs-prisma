@@ -6,6 +6,10 @@ tags:
   - prisma
   - postgresql
   - typescript
+  - graphql
+  - express
+  - Docker
+  - Docker Compose
 ---
 
 # NextJS Prisma Example
@@ -31,6 +35,7 @@ You'll take advantage of the flexible rendering capabilities of Next.js by using
 - NextJS
 - Postgres
 - TypeScript
+- Docker
 
 ## Prerequisites
 
