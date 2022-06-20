@@ -48,6 +48,11 @@ To successfully finish this guide, you'll need:
 
 ## 💁‍♀️ How to use
 
+- Run the following command for a simple TypeScript configuration:
+  ```bash
+  npm install
+  ```
+- [Install Prisma](/install-prisma)
 - [Provision a Postgres container on Railway](https://dev.new)
 - Run the NextJS app `npm run dev` Runs the app in the development mode.
 - Open http://localhost:3000 to view it in your browser.
