@@ -49,11 +49,10 @@ To successfully finish this guide, you'll need:
 ## 💁‍♀️ How to use
 
 - [Provision a Postgres container on Railway](https://dev.new)
-- `npm run dev` Runs the app in the development mode.
+- Run the NextJS app `npm run dev` Runs the app in the development mode.
 - Open http://localhost:3000 to view it in your browser.
 - Connect to your Railway project with `railway link`
 - Migrate the database `railway run yarn migrate:dev`
-- Run the NextJS app `railway run yarn dev`
 
 ## 📝 Notes
 
