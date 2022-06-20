@@ -45,6 +45,8 @@ To successfully finish this guide, you'll need:
 - A PostgreSQL Database (set up a free PostgreSQL database on Heroku)
 - A GitHub Account (to create an OAuth app)
 - A Vercel Account (to deploy the app)
+- Docker (to run the app)
+- Docker Compose (to run the app)
 
 ## 💁‍♀️ How to use
 
